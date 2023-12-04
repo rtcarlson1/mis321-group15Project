@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Town Vending</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+   
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Title Town Vending</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="admin-item" id="admin-link">
+            <a class="nav-link" href="./admin.html">Admin</a>
+          </li>
+        </ul>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#adminLoginModal">
+            Admin Login
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+ 
+<!-- Admin Login -->
+<div class="modal fade" id="adminLoginModal" tabindex="-1" aria-labelledby="adminLoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="adminLoginModalLabel">Admin Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="adminUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="adminUsername">
+                    </div>
+                    <div class="mb-3">
+                        <label for="adminPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="adminPassword">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="adminLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    <div class="container text-center">
+        <h1>Title Town Vending</h1>
+        <div class="row">
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/doritos.jpg" alt="Item 1">
+                    <p>Name: Doritos</p>
+                    <p>Cost: $2.50</p>
+                    <button class="btn btn-primary" type="button" onclick="buyDorito()">Buy</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/pretzel.jpg" alt="Item 2">
+                    <p>Name: Pretzels</p>
+                    <p>Cost: $2.00</p>
+                    <button class="btn btn-primary" type="button" onclick="purchaseItem()">Buy</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/cheezit.jpg" alt="Item 3">
+                    <p>Name: Cheez It</p>
+                    <p>Cost: $2.50</p>
+                    <button class="btn btn-primary" type="button" onclick="purchaseItem()">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/sourskittles.png" alt="Item 1">
+                    <p>Name: Sour Skittles</p>
+                    <p>Cost: $2.50</p>
+                    <button class="btn btn-primary" type="button" onclick="purchaseItem()">Buy</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/skittles.jpg" alt="Item 2">
+                    <p>Name: Skittles</p>
+                    <p>Cost: $2.00</p>
+                    <button class="btn btn-primary" type="button" onclick="purchaseItem()">Buy</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item">
+                    <img src="./images/reesespieces.png" alt="Item 3">
+                    <p>Name: Reese's Pieces</p>
+                    <p>Cost: $3.50</p>
+                    <button class="btn btn-primary" type="button" onclick="buyReeces()">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div id="money-display">
+                    <p>Your Balance: $0.00</p>
+                </div>
+                <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+                <!-- Add a form to select payment method -->
+                <!-- <form>
+                    <select id="payment-method" class="form-select">
+                        <option>Please select a payment method:</option>
+                        <option value="digital">Digital Payment</option>
+                        <option value="cash">Cash Payment</option>
+                    </select>
+                </form> -->
+                <!-- Add a div to display the input based on the selected method -->
+                <!-- <div id="payment-input" style="display: none;">
+                    <div class="mb-3">
+                        <input type="number" id="digital-amount" class="form-control" placeholder="Enter digital payment amount">
+                        <input type="number" id="cash-amount" class="form-control" placeholder="Enter cash payment amount" style="display: none;">
+                    </div>
+                </div> -->
+                <button class="btn btn-primary" type="button" onclick="addMoney()">Add Money</button>
+                <input type="number" id="money-input" class="form-control" placeholder="Enter amount">
+            </div>
+        </div>
+    </div>
+ 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

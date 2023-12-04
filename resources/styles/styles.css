@@ -1,0 +1,26 @@
+.item {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 150px; 
+    height: 150px; 
+}
+
+#money-display {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#money-button {
+    margin-top: 10px;
+}
+
+.custom-navbar{
+    background-color: #660000 !important;
+}
