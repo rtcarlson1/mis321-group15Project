@@ -9,6 +9,7 @@ namespace api.Models
         public int NumSold {get; set;}
         public bool Deleted {get; set;}
         public int VendID {get; set;}
+        public string ImageURL {get; set;}
 
         public Product(){
             Deleted = false;

@@ -131,42 +131,46 @@ async function loadProductList() {
                     `;
                     machineTableBody.appendChild(row);
                     console.log(product.name)
+
+                    const soldTableBody = document.querySelector("#soldInventoryTable tbody");
+                    soldTableBody.innerHTML = ""; // Clear previous content
+                    
+                    purchaseEvents.forEach(purchaseEvent => {
+                        const row = document.createElement("tr");
+                        let tempName = '';
+                        let checkVend = false;
+                        if(purchaseEvent.vendID == vendID)
+                        {
+                            checkVend = true;
+                        }
+                        if(checkVend == true)
+                        {
+                            console.log('VendID:', purchaseEvent)
+                            console.log('Product ID:', product.productID);
+                            console.log('Purchase EventProductID:', purchaseEvent.productID);
+                            
+                            
+                            tempName = product.name;
+                            console.log('Selected Sold Dates:', purchaseEvent.date);
+                            console.log('Temp Name:', tempName);
+                            row.innerHTML = `
+                                <td>${tempName}</td>
+                                <td>${product.productID}</td>
+                                <td>${purchaseEvent.date}</td>
+                                <td>${purchaseEvent.time}</td>
+                            `;
+                            soldTableBody.appendChild(row);
+                            
+                            
+                            // console.log('Product Name:', product.name);
+                           
+                        }
+                    });
                 }
+
             }
         });
     
- 
-    // Display the sold product list in the sold inventory table
-    const soldTableBody = document.querySelector("#soldInventoryTable tbody");
-    soldTableBody.innerHTML = ""; // Clear previous content
- 
-    purchaseEvents.forEach(purchaseEvent => {
-        console.log('Product Name:', purchaseEvents);
-        console.log('Selected Sold Dates:', purchaseEvent.date);
-        const row = document.createElement("tr");
-        let tempName = '';
-        products.forEach(product => {
-            if(product.productID == purchaseEvent.productID)
-            {
-                tempName = product.name;
-            }
-        });
-        let checkVend = false;
-        if(purchaseEvent.vendID == vendID)
-        {
-            checkVend = true;
-        }
-        if(checkVend == true)
-        {
-            row.innerHTML = `
-                <td>${tempName}</td>
-                <td>${purchaseEvent.productID}</td>
-                <td>${purchaseEvent.date}</td>
-                <td>${purchaseEvent.time}</td>
-            `;
-            soldTableBody.appendChild(row);
-        }
-    });
 }
  
  
@@ -356,19 +360,8 @@ async function SaveProduct(product) {
 
 async function deleteProduct(product)
 {
-    // const putBookAPIUrl = "https://localhost:7024/api/Exercise/" + putId;
     const putUrl = "https://localhost:7051/api/Product/" + product.productID;
-
     console.log(product.productID)
-    // let newProduct = {
-    //     "ProductID": product.ProductID,
-    //     "Name": product.Name,
-    //     "Quantity": product.Quantity,
-    //     "Cost": product.Cost,
-    //     "NumSold": product.NumSold,
-    //     "Deleted": !product.Deleted,
-    //     "VendID": product.VendID
-    //   }
     product.deleted = true;
     console.log(product)
     await fetch(putUrl, {
@@ -411,22 +404,3 @@ async function SaveSoldProduct(soldproduct) {
    
  
 }
- 
-// document.addEventListener("DOMContentLoaded", async function () {
-//     const itemInventory = await getItemInventory();
- 
-//     // Populate the table with item inventory data
-//     const tableBody = document.querySelector("tbody");
-//     itemInventory.forEach(product => {
-//         const row = document.createElement("tr");
-//         row.innerHTML = `
-//             <td>${product.id}</td>
-//             <td id="inventory-${product.id}">${product.quantity}</td>
-//             <td>
-//                 <button class="btn btn-success" onclick="addToInventory('${product.id}')">Add</button>
-//                 <button class="btn btn-danger" onclick="removeFromInventory('${product.id}')">Remove</button>
-//             </td>
-//         `;
-//         tableBody.appendChild(row);
-//     });
-// });

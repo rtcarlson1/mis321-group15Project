@@ -22,7 +22,7 @@ namespace api.Utilities
             List<Product> Allproducts = new List<Product>();
             while(rdr.Read())
             {
-                Allproducts.Add(new Product(){ProductID = rdr.GetInt32(0), Name = rdr.GetString(1), Quantity = rdr.GetInt32(2), Cost = rdr.GetDouble(3), NumSold = rdr.GetInt32(4), Deleted = rdr.GetBoolean(5), VendID = rdr.GetInt32(6)});
+                Allproducts.Add(new Product(){ProductID = rdr.GetInt32(0), Name = rdr.GetString(1), Quantity = rdr.GetInt32(2), Cost = rdr.GetDouble(3), NumSold = rdr.GetInt32(4), Deleted = rdr.GetBoolean(5), VendID = rdr.GetInt32(6), ImageURL = rdr.GetString(7)});
             }
             con.Close();
             return Allproducts;
@@ -103,7 +103,7 @@ namespace api.Utilities
             List<Product> Allproducts = new List<Product>();
             while(rdr.Read())
             {
-                Allproducts.Add(new Product(){ProductID = rdr.GetInt32(0), Name = rdr.GetString(1), Quantity = rdr.GetInt32(2), Cost = rdr.GetDouble(3), NumSold = rdr.GetInt32(4), Deleted = rdr.GetBoolean(5), VendID = rdr.GetInt32(6)});
+                Allproducts.Add(new Product(){ProductID = rdr.GetInt32(0), Name = rdr.GetString(1), Quantity = rdr.GetInt32(2), Cost = rdr.GetDouble(3), NumSold = rdr.GetInt32(4), Deleted = rdr.GetBoolean(5), VendID = rdr.GetInt32(6), ImageURL = rdr.GetString(7)});
             }
             con.Close();
             return Allproducts;
