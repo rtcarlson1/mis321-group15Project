@@ -32,16 +32,15 @@ namespace api.Utilities
             string cs  = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            Console.WriteLine("New Purchase Event");
 
-            string stm = @"INSERT INTO PurchaseEvents (Date, ProductID, Deleted, VendID) VALUES(@Date, @ProductID, @Deleted, @VendID)";
+            string stm = @"INSERT INTO PurchaseEvents (Date, Deleted, VendID, ProductID) VALUES(@Date, @Deleted, @VendID, @ProductID)";
 
             using var cmd = new MySqlCommand(stm, con);
 
             cmd.Parameters.AddWithValue("@Date", myPurchaseEvent.Date);
-            cmd.Parameters.AddWithValue("@ProductID", myPurchaseEvent.ProductID);
             cmd.Parameters.AddWithValue("@Deleted", myPurchaseEvent.Deleted);
             cmd.Parameters.AddWithValue("@VendID", myPurchaseEvent.VendID);
+            cmd.Parameters.AddWithValue("@ProductID", myPurchaseEvent.ProductID);
 
             cmd.Prepare();
 

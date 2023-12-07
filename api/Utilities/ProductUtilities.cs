@@ -59,16 +59,17 @@ namespace api.Utilities
             string cs  = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            string stm = @"UPDATE Products SET Deleted = @Deleted WHERE ProductID = @ProductID";
+            string stm = @"UPDATE Products SET Quantity = @Quantity, Name = @Name, Cost = @Cost, NumSold = @NumSold, Deleted = @Deleted, VendID = @VendID, ImageURL = @ImageURL WHERE ProductID = @ProductID";
             MySqlCommand cmd = new MySqlCommand(stm, con);
             
             cmd.Parameters.AddWithValue("@ProductID", value.ProductID);
-            // cmd.Parameters.AddWithValue("@Quantity", value.Quantity);
-            // cmd.Parameters.AddWithValue("@Name", value.Name);
-            // cmd.Parameters.AddWithValue("@Cost", value.Cost);
-            // cmd.Parameters.AddWithValue("@NumSold", value.NumSold);
-            cmd.Parameters.AddWithValue("@Deleted", true);
-            // cmd.Parameters.AddWithValue("@VendID", value.VendID);
+            cmd.Parameters.AddWithValue("@Quantity", value.Quantity);
+            cmd.Parameters.AddWithValue("@Name", value.Name);
+            cmd.Parameters.AddWithValue("@Cost", value.Cost);
+            cmd.Parameters.AddWithValue("@NumSold", value.NumSold);
+            cmd.Parameters.AddWithValue("@Deleted", value.Deleted);
+            cmd.Parameters.AddWithValue("@VendID", value.VendID);
+            cmd.Parameters.AddWithValue("@ImageURL", value.ImageURL);
             
             cmd.Prepare();
             cmd.ExecuteNonQuery();

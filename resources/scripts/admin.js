@@ -7,7 +7,7 @@ let myAdmin = [];
 let myProduct = [];
 let myPurchaseEvent = [];
  
-function handleOnLoad()
+async function handleOnLoad()
 {
     let html=`
     <header data-bs-theme="dark">
@@ -36,10 +36,7 @@ function handleOnLoad()
  
             <label for="vendingMachine">Select Vending Machine:</label>
             <select id="vendingMachine" class="form-select" onchange="loadProductList()">
-                <option value="1">Machine 1</option>
-                <option value="2">Machine 2</option>
-                <option value="3">Machine 3</option>
-                <!-- Add more vending machines as needed -->
+       
             </select>
  
             <div class="row">
@@ -62,6 +59,9 @@ function handleOnLoad()
             </div>
             <br>
             <button onclick="loadProductForm()" class="btn btn-primary">Add Product</button>
+            <button onclick="loadProductEditType()" class="btn btn-primary">Edit Type</button>
+            <button onclick="loadProductEditQuantity()" class="btn btn-primary">Edit Quantity</button>
+            <button onclick="loadProductEditCost()" class="btn btn-primary">Edit Cost</button>
             <br>
             <br>
             <div class="row">
@@ -73,7 +73,6 @@ function handleOnLoad()
                         <th>Product</th>
                         <th>Product ID</th>
                         <th>Date</th>
-                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -92,6 +91,16 @@ function handleOnLoad()
     `;
  
     document.getElementById('app').innerHTML = html;
+    const vendingMachines = await fetchVendingMachine();
+   
+    // Dynamically populate the select element with vending machine options
+    const vendingMachineSelect = document.getElementById("vendingMachine");
+    vendingMachines.forEach(machine => {
+        const option = document.createElement("option");
+        option.value = machine.vendID;
+        option.textContent = "ID: " + machine.vendID + " Address: " + machine.address;
+        vendingMachineSelect.appendChild(option);
+    });
     loadProductList();
    
 }
@@ -108,8 +117,8 @@ async function loadProductList() {
     machineTableBody.innerHTML = ""; // Clear previous content
  
  
-    
-    
+   
+   
         products.forEach(product => {
             if(product.deleted == false)
             {
@@ -131,10 +140,10 @@ async function loadProductList() {
                     `;
                     machineTableBody.appendChild(row);
                     console.log(product.name)
-
+ 
                     const soldTableBody = document.querySelector("#soldInventoryTable tbody");
                     soldTableBody.innerHTML = ""; // Clear previous content
-                    
+                   
                     purchaseEvents.forEach(purchaseEvent => {
                         const row = document.createElement("tr");
                         let tempName = '';
@@ -148,8 +157,8 @@ async function loadProductList() {
                             console.log('VendID:', purchaseEvent)
                             console.log('Product ID:', product.productID);
                             console.log('Purchase EventProductID:', purchaseEvent.productID);
-                            
-                            
+                           
+                           
                             tempName = product.name;
                             console.log('Selected Sold Dates:', purchaseEvent.date);
                             console.log('Temp Name:', tempName);
@@ -157,20 +166,19 @@ async function loadProductList() {
                                 <td>${tempName}</td>
                                 <td>${product.productID}</td>
                                 <td>${purchaseEvent.date}</td>
-                                <td>${purchaseEvent.time}</td>
                             `;
                             soldTableBody.appendChild(row);
-                            
-                            
+                           
+                           
                             // console.log('Product Name:', product.name);
                            
                         }
                     });
                 }
-
+ 
             }
         });
-    
+   
 }
  
  
@@ -198,9 +206,9 @@ async function fetchProducts() {
 // Function to fetch products based on vendID
 async function fetchVendingMachine() {
     try {
-        const response = await fetch(`https://localhost:7051/api/VendingMachine`);
-        const products = await response.json();
-        return products;
+        const response = await fetch(vendingmachineUrl);
+        const vendingMachines = await response.json();
+        return vendingMachines;
     } catch (error) {
         console.error('Error fetching products by vendID:', error);
     }
@@ -220,6 +228,53 @@ function loadProductForm() {
             <label for="vendid">VendID:</label><br>
             <input type="vendid" id="vendid" name="vendid"><br><br>
             <button onclick="ProductAdd()" class="btn btn-primary">Submit</button>
+        </form>
+    `;
+ 
+    // Display the form in the container
+    document.getElementById('productFormContainer').innerHTML = formHtml;
+}
+
+function loadProductEditQuantity() {
+    let formHtml = `
+        <form onsubmit="return false">
+            <label for="productID">ProductID:</label><br>
+            <input type="number" id="productID" name="productID"><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity"><br>
+            <button onclick="ProductEditQuantity(productID.value)" class="btn btn-primary">Submit</button>
+        </form>
+    `;
+ 
+    // Display the form in the container
+    document.getElementById('productFormContainer').innerHTML = formHtml;
+}
+
+function loadProductEditCost() {
+    let formHtml = `
+        <form onsubmit="return false">
+            <label for="productID">ProductID:</label><br>
+            <input type="number" id="productID" name="productID"><br>
+            <label for="cost">Cost:</label><br>
+            <input type="number" id="cost" name="cost"><br>
+            <button onclick="ProductEditCost(productID.value)" class="btn btn-primary">Submit</button>
+        </form>
+    `;
+ 
+    // Display the form in the container
+    document.getElementById('productFormContainer').innerHTML = formHtml;
+}
+
+function loadProductEditType() {
+    let formHtml = `
+        <form onsubmit="return false">
+            <label for="productID">ProductID:</label><br>
+            <input type="number" id="productID" name="productID"><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="imageURL">Image URL:</label><br>
+            <input type="text" id="imageURL" name="imageURL"><br>
+            <button onclick="ProductEditType(productID.value)" class="btn btn-primary">Submit</button>
         </form>
     `;
  
@@ -255,11 +310,9 @@ async function ProductAdd() {
         Quantity: document.getElementById('quantity').value,
         Cost: document.getElementById('cost').value,
         Name: document.getElementById('name').value,
-        Sold: false,
+        NumSold: 0,
         Deleted: false,
         VendID: document.getElementById('vendid').value,
- 
- 
     };
     console.log("What product am I adding?", product);
     myProduct.push(product);
@@ -268,6 +321,79 @@ async function ProductAdd() {
     document.getElementById('cost').value = '';
     document.getElementById('name').value = '';
     document.getElementById('vendid').value = '';
+ 
+}
+
+async function ProductEditQuantity(productID) {
+    const response = await fetch(productUrl + "/" + productID);
+    const product = await response.json();
+    console.log(product)
+    let newProduct = {
+        ProductID: document.getElementById('productID').value,
+        Name: product.name,
+        Quantity: document.getElementById('quantity').value,
+        Cost: product.cost,
+        NumSold: product.numSold,
+        Deleted: product.deleted,
+        VendID: product.vendID,
+        ImageURL: product.imageURL
+ 
+    };
+    console.log("What product am I editing?", product);
+    await SaveProduct(newProduct)
+    document.getElementById('productID').value = '';
+    document.getElementById('quantity').value = '';
+
+    loadProductList()
+ 
+}
+
+async function ProductEditCost(productID) {
+    const response = await fetch(productUrl + "/" + productID);
+    const product = await response.json();
+    console.log(product)
+    let newProduct = {
+        ProductID: document.getElementById('productID').value,
+        Name: product.name,
+        Quantity: product.quantity,
+        Cost: document.getElementById('cost').value,
+        NumSold: product.numSold,
+        Deleted: product.deleted,
+        VendID: product.vendID,
+        ImageURL: product.imageURL
+ 
+    };
+    console.log("What product am I editing?", product);
+    await SaveProduct(newProduct)
+    document.getElementById('productID').value = '';
+    document.getElementById('cost').value = '';
+
+    loadProductList()
+ 
+}
+
+async function ProductEditType(productID) {
+    const response = await fetch(productUrl + "/" + productID);
+    const product = await response.json();
+    console.log(product)
+    let newProduct = {
+        ProductID: document.getElementById('productID').value,
+        Name: document.getElementById('name').value,
+        Quantity: product.quantity,
+        Cost: product.cost,
+        NumSold: product.numSold,
+        Deleted: product.deleted,
+        VendID: product.vendID,
+        ImageURL: document.getElementById('imageURL').value
+ 
+    };
+    console.log("What product am I editing?", product);
+    await SaveProduct(newProduct)
+    document.getElementById('productID').value = '';
+    document.getElementById('name').value = '';
+    document.getElementById('imageURL').value = '';
+
+    loadProductList()
  
 }
  
@@ -337,6 +463,7 @@ async function SaveProduct(product) {
     if (product.ProductID) {
         // If exercise has an ID, it already exists in the API, update it
         const updateUrl = `${productUrl}/${product.ProductID}`;
+        console.log(product)
         await fetch(updateUrl, {
             method: "PUT", // Use PUT for updating
             body: JSON.stringify(product),
@@ -357,7 +484,7 @@ async function SaveProduct(product) {
  
    
 }
-
+ 
 async function deleteProduct(product)
 {
     const putUrl = "https://localhost:7051/api/Product/" + product.productID;

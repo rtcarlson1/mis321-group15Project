@@ -10,7 +10,7 @@ let adminData = [];
 let myProduct = [];
 let myPurchaseEvent = [];
  
-function handleOnLoad()
+async function handleOnLoad()
 {
     let html=`
     <header data-bs-theme="dark">
@@ -97,50 +97,76 @@ function handleOnLoad()
             </div>
         </div>
     </div>
+    <label for="vendingMachine">Select Vending Machine:</label>
+    <select id="vendingMachine" class="form-select" onchange="loadProductInfo()">
     `;
  
     document.getElementById('app').innerHTML = html;
+    const vendingMachines = await fetchVendingMachine();
+   
+    // Dynamically populate the select element with vending machine options
+    const vendingMachineSelect = document.getElementById("vendingMachine");
+    vendingMachines.forEach(machine => {
+        const option = document.createElement("option");
+        option.value = machine.vendID;
+        option.textContent = "ID: " + machine.vendID + " Address: " + machine.address;
+        vendingMachineSelect.appendChild(option);
+    });
     loadProductInfo();
    
 }
  
 async function loadProductInfo() {
+    const vendIDString = document.getElementById('vendingMachine').value;
+    const vendID = parseInt(vendIDString, 10);
     try {
         const products = await fetchProducts();
-
+ 
         const productContainer = document.getElementById("product-container");
         productContainer.innerHTML = ""; // Clear previous content
-
+ 
         let rowDiv; // Variable to hold the current row
-
+ 
         console.log('my products', products)
-
+ 
         products.forEach((product, index) => {
-            // Create a new row for every third product
-            if (index % 3 === 0) {
-                rowDiv = document.createElement("div");
-                rowDiv.classList.add("row");
-                productContainer.appendChild(rowDiv);
+            let checkVend = false;
+            if(product.vendID == vendID)
+            {
+                checkVend = true;
             }
-
-            // Create the item div for each product
-            const colDiv = document.createElement("div");
-            colDiv.classList.add("col-4");
-
-            const itemDiv = document.createElement("div");
-            itemDiv.classList.add("item");
-
-            itemDiv.innerHTML = `
-                <img src="${product.imageURL}" alt="${product.name}">
-                <p>Name: ${product.name}</p>
-                <p>Cost: $${product.cost.toFixed(2)}</p>
-                <button class="btn btn-primary" onclick="purchaseItem('${product.productID}')">Buy</button>
-            `;
-
-            colDiv.appendChild(itemDiv);
-            rowDiv.appendChild(colDiv);
+            if (product.quantity !== 0 && checkVend == true) {
+                // Create a new row if the current row is not present
+                if (!rowDiv) {
+                    rowDiv = document.createElement("div");
+                    rowDiv.classList.add("row");
+                    productContainer.appendChild(rowDiv);
+                }
+ 
+                // Create the item div for each product
+                const colDiv = document.createElement("div");
+                colDiv.classList.add("col-4");
+ 
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("item");
+ 
+                itemDiv.innerHTML = `
+                    <img src="${product.imageURL}" alt="${product.name}">
+                    <p>Name: ${product.name}</p>
+                    <p>Cost: $${product.cost.toFixed(2)}</p>
+                    <button class="btn btn-primary" onclick="purchaseItem('${product.productID}')">Buy</button>
+                `;
+ 
+                colDiv.appendChild(itemDiv);
+                rowDiv.appendChild(colDiv);
+ 
+                // Reset the rowDiv after every third product
+                if ((index + 1) % 3 === 0) {
+                    rowDiv = null;
+                }
+            }
         });
-
+ 
     } catch (error) {
         console.error('Error fetching products:', error);
     }
@@ -182,10 +208,10 @@ async function fetchPurchaseEvents() {
 async function fetchVendingMachine() {
     try {
         const response = await fetch(vendingmachineUrl);
-        const VendingMachines = await response.json();
-        return VendingMachines;
+        const vendingMachines = await response.json();
+        return vendingMachines;
     } catch (error) {
-        console.error('Error fetching Vending Machines:', error);
+        console.error('Error fetching products by vendID:', error);
     }
 }
 
@@ -259,7 +285,7 @@ async function displayProducts() {
             itemDiv.innerHTML = `
                 <img src="${product.ImageURL}" alt="${product.Name}">
                 <p>Name: ${product.Name}</p>
-                <button class="btn btn-primary" onclick="purchaseItem('${product.Code}')">Buy</button>
+                <button class="btn btn-primary" onclick="purchaseItem(${product.ProductID})">Buy</button>
             `;
  
             colDiv.appendChild(itemDiv);
@@ -298,20 +324,6 @@ async function addMoney() {
         displayErrorMessage("Please enter a valid amount.");
     }
 }
-
-async function buyDorito()
-{
-    balance -= 2.50;
-    updateBalanceDisplay();
-    alert(`You have successfully purchased Doritos`);
-}
-
-async function buyReeces()
-{
-    balance -= 3.50;
-    updateBalanceDisplay();
-    alert(`You have successfully purchased Reese's Pieces`);
-}
  
 // Function to purchase an item
 async function purchaseItem(productId) {
@@ -322,19 +334,22 @@ async function purchaseItem(productId) {
         const response = await fetch(productUrl + "/" + productId);
         const product = await response.json();
  
-        if (balance >= product.Cost) {
+        if (balance >= product.cost) {
             // Deduct the cost from the balance
-            balance -= product.Cost;
+            balance -= product.cost;
+            product.numSold++;
+            product.quantity--;
  
             // Update the UI
             updateBalanceDisplay();
             hideErrorMessage();
  
             // Display a success message
-            alert(`You have successfully purchased ${product.Name}`);
+            alert(`You have successfully purchased ${product.name}`);
+
+            PurchaseEventAdd(product);
+            markProductAsSold(product);
  
-            // Send a request to the backend to mark the product as sold or update inventory
-            await markProductAsSold(product.ProductID);
         } else {
             // Display an error message if the balance is insufficient
             displayErrorMessage("You don't have enough money to purchase this item.");
@@ -344,17 +359,51 @@ async function purchaseItem(productId) {
     }
 }
  
-// Function to mark a product as sold (need to implement this on the admin page)
-async function markProductAsSold(productID) {
-    try {
-        const response = await fetch(productUrl + productID, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ Sold: true }),
-        });
+async function PurchaseEventAdd(product) {
+    const tempDate = new Date();
+    let tempString = ""
+    tempString = tempDate.getFullYear() + "-" + tempDate.getDate() + "-" + tempDate.getMonth() + " " + tempDate.getHours() + ":" + tempDate.getMinutes() + ":" + tempDate.getSeconds()
+    let purchaseEvent = {
+        Date: tempString,
+        Deleted: false,
+        VendID: product.vendID,
+        ProductID: product.productID
+    };
+    console.log("What product am I adding?", purchaseEvent);
+    console.log(purchaseEvent.Date)
+
+    await fetch(purchaseeventUrl, {
+        method: "POST",
+        body: JSON.stringify(purchaseEvent),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    });
  
+}
+
+// Function to mark a product as sold (need to implement this on the admin page)
+async function markProductAsSold(product) {
+    let newProduct = {
+        "productID": product.productID,
+        "name": product.name,
+        "quantity": product.quantity,
+        "cost": product.cost,
+        "numSold": product.numSold,
+        "deleted": product.delted,
+        "vendID": product.vendID,
+        "imageURL": product.imageURL
+      }
+    try {
+        const response = await fetch(productUrl + "/" + product.productID, {
+            method: "PUT",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newProduct)
+        });
+        console.log("Sold")
         if (!response.ok) {
             throw new Error(`Failed to mark product as sold. Status: ${response.status}`);
         }
@@ -362,6 +411,7 @@ async function markProductAsSold(productID) {
         console.error('Error marking product as sold:', error);
         // Handle errors, display an error message, etc.
     }
+    loadProductInfo();
 }
  
 function displayErrorMessage(message) {
