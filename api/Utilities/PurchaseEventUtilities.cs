@@ -20,7 +20,7 @@ namespace api.Utilities
             List<PurchaseEvent> Allpurchaseevents = new List<PurchaseEvent>();
             while(rdr.Read())
             {
-                Allpurchaseevents.Add(new PurchaseEvent(){PurchaseID = rdr.GetInt32(0), Date = rdr.GetString(1), Time = rdr.GetString(2), ProductID = rdr.GetInt32(3), Deleted = rdr.GetBoolean(4), VendID = rdr.GetInt32(5)});
+                Allpurchaseevents.Add(new PurchaseEvent(){PurchaseID = rdr.GetInt32(0), Date = rdr.GetString(1), ProductID = rdr.GetInt32(2), Deleted = rdr.GetBoolean(3), VendID = rdr.GetInt32(4)});
             }
             con.Close();
             return Allpurchaseevents;
@@ -34,12 +34,11 @@ namespace api.Utilities
             con.Open();
             Console.WriteLine("New Purchase Event");
 
-            string stm = @"INSERT INTO PurchaseEvents (Date, Time, ProductID, Deleted, VendID) VALUES(@Date, @Time, @ProductID, @Deleted, @VendID)";
+            string stm = @"INSERT INTO PurchaseEvents (Date, ProductID, Deleted, VendID) VALUES(@Date, @ProductID, @Deleted, @VendID)";
 
             using var cmd = new MySqlCommand(stm, con);
 
             cmd.Parameters.AddWithValue("@Date", myPurchaseEvent.Date);
-            cmd.Parameters.AddWithValue("@Time", myPurchaseEvent.Time);
             cmd.Parameters.AddWithValue("@ProductID", myPurchaseEvent.ProductID);
             cmd.Parameters.AddWithValue("@Deleted", myPurchaseEvent.Deleted);
             cmd.Parameters.AddWithValue("@VendID", myPurchaseEvent.VendID);
@@ -55,11 +54,10 @@ namespace api.Utilities
             string cs  = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            string stm = @"UPDATE PurchaseEvents SET Date = @Date, Time = @Time, ProductID = @ProductID WHERE PurchaseID = @ID";
+            string stm = @"UPDATE PurchaseEvents SET Date = @Date, ProductID = @ProductID WHERE PurchaseID = @ID";
             MySqlCommand cmd = new MySqlCommand(stm, con);
             
             cmd.Parameters.AddWithValue("@Date", value.Date);
-            cmd.Parameters.AddWithValue("@Time", value.Time);
             cmd.Parameters.AddWithValue("@ProductID", value.ProductID);
             cmd.Parameters.AddWithValue("@ID", value.PurchaseID);
             
