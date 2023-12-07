@@ -792,6 +792,537 @@ C:/Users/MainUser/Code/321/Group Project/groupProject/api/obj/Debug/net6.0/refin
 C:/Users/MainUser/Code/321/Group Project/groupProject/api/obj/Debug/net6.0/api.pdb
 C:/Users/MainUser/Code/321/Group Project/groupProject/api/obj/Debug/net6.0/api.genruntimeconfig.cache
 C:/Users/MainUser/Code/321/Group Project/groupProject/api/obj/Debug/net6.0/ref/api.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/appsettings.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/api.exe
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/api.deps.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/api.runtimeconfig.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/api.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/api.pdb
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/BouncyCastle.Cryptography.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Google.Protobuf.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Humanizer.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Compression.LZ4.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Compression.LZ4.Streams.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Hash.xxHash.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/MessagePack.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/MessagePack.Annotations.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Framework.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Tasks.Core.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Utilities.Core.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.DiaSymReader.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/MySql.Data.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Common.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Configuration.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Frameworks.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.LibraryModel.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Packaging.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.ProjectModel.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Protocol.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Versioning.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.CodeDom.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.AttributedModel.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Convention.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Hosting.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Runtime.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.TypedParts.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Drawing.Common.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.IO.Pipelines.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Resources.Extensions.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Security.Permissions.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Text.Json.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/System.Windows.Extensions.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ZstdSharp.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-arm/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-arm64/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/comerr64.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/gssapi64.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/k5sprt64.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/krb5_64.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/krbcc64.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets/msbuild.api.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets/msbuild.build.api.props
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.api.props
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.api.props
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/scopedcss/bundle/api.styles.css
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.CopyComplete
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/refint/api.dll
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.pdb
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/api.genruntimeconfig.cache
+C:/Users/rjica/Downloads/cmder/MIS 321/mis321-group15Project/api/obj/Debug/net6.0/ref/api.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/appsettings.Development.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/appsettings.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/api
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/api.deps.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/api.runtimeconfig.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/api.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/api.pdb
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/BouncyCastle.Cryptography.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Google.Protobuf.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Humanizer.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Compression.LZ4.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Compression.LZ4.Streams.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/K4os.Hash.xxHash.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/MessagePack.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/MessagePack.Annotations.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Framework.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Tasks.Core.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Build.Utilities.Core.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.DiaSymReader.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/MySql.Data.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Common.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Configuration.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Frameworks.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.LibraryModel.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Packaging.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.ProjectModel.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Protocol.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/NuGet.Versioning.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.CodeDom.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.AttributedModel.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Convention.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Hosting.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.Runtime.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Composition.TypedParts.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.IO.Pipelines.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Resources.Extensions.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Text.Json.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ZstdSharp.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-arm/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-arm64/lib/net6.0/dotnet-aspnet-codegenerator-design.exe
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/comerr64.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/gssapi64.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/k5sprt64.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/krb5_64.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win-x64/native/krbcc64.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.AssemblyReference.cache
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.AssemblyInfoInputs.cache
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.AssemblyInfo.cs
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.CoreCompileInputs.cache
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cs
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.MvcApplicationPartsAssemblyInfo.cache
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets.build.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/staticwebassets.development.json
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/scopedcss/bundle/api.styles.css
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.csproj.CopyComplete
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/refint/api.dll
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.pdb
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/api.genruntimeconfig.cache
+/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/Debug/net6.0/ref/api.dll
 C:\Users\rjica\Downloads\cmder\MIS 321\mis321-group15Project\api\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\rjica\Downloads\cmder\MIS 321\mis321-group15Project\api\bin\Debug\net6.0\appsettings.json
 C:\Users\rjica\Downloads\cmder\MIS 321\mis321-group15Project\api\bin\Debug\net6.0\api.exe
