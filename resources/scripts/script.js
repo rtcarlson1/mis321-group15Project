@@ -6,7 +6,7 @@ const productUrl = "https://localhost:7051/api/Product";
 const vendingmachineUrl = "https://localhost:7051/api/VendingMachine";
 const purchaseeventUrl = "https://localhost:7051/api/PurchaseEvent";
  
-let myAdmin = [];
+let adminData = [];
 let myProduct = [];
 let myPurchaseEvent = [];
  
@@ -25,7 +25,7 @@ function handleOnLoad()
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
-          <li class="admin-item" id="admin-link">
+          <li class="admin-item" id="admin-link" style="display: none;">
             <a class="nav-link" href="./admin.html">Admin</a>
           </li>
         </ul>
@@ -189,53 +189,57 @@ async function fetchVendingMachine() {
     }
 }
 
-// hides the Admin link on startup so you cant click unless logged in
-document.addEventListener("DOMContentLoaded", function() {
-    // document.getElementById("admin-link").style.display = "none";
-});
- 
- 
-async function adminLogin() {
 
+document.addEventListener("DOMContentLoaded", function() {
+    if(isAdmin){
+        const yesAdmin = true
+        const adminLink = document.getElementById("admin-link");
+        adminLink.style.display = yesAdmin ? "block" : "none";
+    };
+    
+});
+
+
+
+async function adminLogin() {
     const email = document.getElementById("adminUsername").value;
     const password = document.getElementById("adminPassword").value;
-    
+
     try {
         const adminData = await fetchAdmins(email, password);
         console.log('My admins', adminData);
-        console.log('Admin emails',adminData.email)
-    
-        if (adminData.email === email && adminData.password === password) {
-            isAdmin = true;
-            localStorage.setItem("adminLoggedIn", "true");
-            alert("Admin login successful!");
-    
-            // Rest of your code for closing the modal and showing the admin link
-            // Close the modal and remove modal backdrop
-            const modal = document.getElementById("adminLoginModal");
-            modal.classList.remove("show");
-            modal.style.display = "none";
-            document.body.classList.remove("modal-open");
-        
-            // Remove the modal backdrop
-            const modalBackdrop = document.querySelector(".modal-backdrop");
-            if (modalBackdrop) {
-                modalBackdrop.parentElement.removeChild(modalBackdrop);
-            }
-    
-            // Show the Admin link after a successful admin login
-            document.getElementById("admin-link").style.display = "block";
-            } 
-            else {
+
+        if (adminData.length > 0) {
+            const isAdminMatch = adminData.some(admin => admin.email === email && admin.password === password);
+
+            if (isAdminMatch) {
+                isAdmin = true;
+                localStorage.setItem("adminLoggedIn", "true");
+                alert("Admin login successful!");
+
+                const modal = document.getElementById("adminLoginModal");
+                modal.classList.remove("show");
+                modal.style.display = "none";
+                document.body.classList.remove("modal-open");
+
+                // Remove the modal backdrop
+                const modalBackdrop = document.querySelector(".modal-backdrop");
+                if (modalBackdrop) {
+                    modalBackdrop.parentElement.removeChild(modalBackdrop);
+                }
+                document.getElementById("admin-link").style.display = "block";
+            } else {
                 alert("Invalid credentials. Please try again.");
             }
+        } else {
+            alert("Invalid credentials. Please try again.");
+        }
     } catch (error) {
-        // Handle error (e.g., display an error message)
-         console.error('Error during admin login:', error);
+        console.error('Error during admin login:', error);
         alert("Error during admin login. Please try again later.");
     }
-    
 }
+
  
 // Function to fetch products from the API and dynamically generate HTML elements
 async function displayProducts() {
@@ -243,10 +247,8 @@ async function displayProducts() {
         const response = await fetch(productUrl);
         const products = await response.json();
  
-        // Reference the product container
         const productContainer = document.getElementById("product-container");
  
-        // Loop through each product and create HTML elements
         products.forEach(product => {
             const colDiv = document.createElement("div");
             colDiv.classList.add("col-4");
@@ -281,6 +283,9 @@ async function displayProducts() {
 //         console.error('Error fetching product details:', error);
 //     }
 // }
+
+
+//-----------------------------------------------What we are working on now--------------------------------------
  
 // Function to add money to the balance
 async function addMoney() {
@@ -370,22 +375,6 @@ function hideErrorMessage() {
     errorMessage.style.display = "none";
 }
  
-// change so that they get pulled from database
-// function getItemPrice(itemCode) {
-//     // Define item prices based on their codes
-//     const itemPrices = {
-//         "A1": 1.00,
-//         "A2": 1.50,
-//         "A3": 1.25,
-//         "B1": 2.00,
-//         "B2": 2.00,
-//         "B3": 2.00,
-//         // Can add more here
-//     };
- 
-//     // Return the price for the given item code, or 0 if the item code is not found
-//     return itemPrices[itemCode] || 0.00;
-// }
  
 function updateBalanceDisplay() {
     const moneyDisplay = document.getElementById("money-display");
