@@ -155,7 +155,7 @@ async function loadProductInfo() {
                     <p>Name: ${product.name}</p>
                     <p>Cost: $${product.cost.toFixed(2)}</p>
                     <button class="btn btn-primary" onclick="purchaseItemDigital('${product.productID}')">Buy with Credit</button>
-                    <button class="btn btn-primary" onclick="purchaseItemCash('${product.productID}')">Buy with Cash</button>
+                    <button class="btn btn-primary" onclick="purchaseItemCash('${product.productID, product.vendID}')">Buy with Cash</button>
                 `;
  
                 colDiv.appendChild(itemDiv);
@@ -366,14 +366,14 @@ async function purchaseItemCash(productID, vendID) {
     }
 }
 
-async function purchaseItemDigital(productID, vendID) {
+async function purchaseItemDigital(productID) {
     //const selectedItem = document.getElementById("item-select").value;
  
     try {
         // Fetch product details
         const response = await fetch(productUrl + "/" + productID);
         const product = await response.json();
-        if (balance >= product.cost) {
+        
             // Deduct the cost from the balance
             product.numSold++;
             product.quantity--;
@@ -387,11 +387,6 @@ async function purchaseItemDigital(productID, vendID) {
 
             PurchaseEventAdd(product);
             markProductAsSold(product);
- 
-        } else {
-            // Display an error message if the balance is insufficient
-            displayErrorMessage("You don't have enough money to purchase this item.");
-        }
     } catch (error) {
         console.error('Error purchasing item:', error);
     }
