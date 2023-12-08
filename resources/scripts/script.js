@@ -280,9 +280,6 @@ async function displayProducts() {
         console.error('Error fetching products:', error);
     }
 }
-
-
-//-----------------------------------------------What we are working on now--------------------------------------
  
 // Function to add money to the balance
 async function addMoney() {
@@ -351,7 +348,6 @@ async function purchaseItemCash(productID, vendID) {
 }
 
 async function purchaseItemDigital(productID) {
-    //const selectedItem = document.getElementById("item-select").value;
  
     try {
         // Fetch product details
@@ -379,7 +375,7 @@ async function purchaseItemDigital(productID) {
 async function PurchaseEventAdd(product) {
     const tempDate = new Date();
     let tempString = ""
-    tempString = tempDate.getFullYear() + "-" + tempDate.getDate() + "-" + tempDate.getMonth() + " " + tempDate.getHours() + ":" + tempDate.getMinutes() + ":" + tempDate.getSeconds()
+    tempString = tempDate.getFullYear() + "-" + tempDate.getMonth() + "-" + tempDate.getDate() + " " + tempDate.getHours() + ":" + tempDate.getMinutes() + ":" + tempDate.getSeconds()
     let purchaseEvent = {
         Date: tempString,
         Deleted: false,
@@ -396,7 +392,6 @@ async function PurchaseEventAdd(product) {
             "Content-type": "application/json; charset=UTF-8"
         }
     });
- 
 }
 
 async function VendEditMoney(vendingMachine, product) {
@@ -439,7 +434,7 @@ async function SaveVendingMachine(vendingMachine) {
     }
 }
 
-// Function to mark a product as sold (need to implement this on the admin page)
+// Function to mark a product as sold 
 async function markProductAsSold(product) {
     let newProduct = {
         "productID": product.productID,
@@ -466,7 +461,6 @@ async function markProductAsSold(product) {
         }
     } catch (error) {
         console.error('Error marking product as sold:', error);
-        // Handle errors, display an error message, etc.
     }
     loadProductInfo();
 }

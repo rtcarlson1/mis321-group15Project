@@ -152,7 +152,7 @@ function loadSoldProductsTable(products, purchaseEvents, vendID) {
     purchaseEvents.forEach(purchaseEvent => {
         console.log('Products:', products);
         console.log('Purchase Events:', purchaseEvents);
-        // let tempname = '';
+
         if (purchaseEvent.vendID == vendID) {
             const associatedProduct = products.find(p => p.productID === purchaseEvent.productID);
             const productName = associatedProduct ? associatedProduct.name : 'Unknown Product';
@@ -452,8 +452,7 @@ async function removeFromInventory(id) {
                 product.deleted = true;
             }
         });
-        // document.querySelector(`#inventory-${productId}`).textContent = product.quantity;
-        // await SaveProduct(myProduct[id]);
+
         console.log(myProduct[id])
         deleteProduct(myProduct[id]);
     } catch (error) {
@@ -466,7 +465,7 @@ async function removeFromSoldInventory(id) {
         const myProduct = await getItemInventory();
         const producttodelete = myProduct.find((product) => product.id === id);
         producttodelete.deleted = true;
-        // document.querySelector(`#inventory-${productId}`).textContent = product.quantity;
+
         await SaveProduct(myProduct);
     } catch (error) {
         console.error('Error removing from product:', error);
@@ -475,7 +474,7 @@ async function removeFromSoldInventory(id) {
  
 async function getItemInventory() {
     try {
-        let response = await fetch(productUrl); // Replace with your actual API endpoint
+        let response = await fetch(productUrl); 
         myProduct = await response.json();
         return myProduct;
     } catch (error) {
@@ -486,18 +485,18 @@ async function getItemInventory() {
 async function SaveProduct(product) {
     console.log("what exercise am I saving", product);
     if (product.ProductID) {
-        // If exercise has an ID, it already exists in the API, update it
+        // If product has an ID, it already exists in the API, update it
         const updateUrl = `${productUrl}/${product.ProductID}`;
         console.log(product)
         await fetch(updateUrl, {
-            method: "PUT", // Use PUT for updating
+            method: "PUT", 
             body: JSON.stringify(product),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
             }
         });
     } else {
-        // If exercise has no ID, it's a new exercise, create it
+        // If product has no ID, it's a new product, create it
         await fetch(productUrl, {
             method: "POST",
             body: JSON.stringify(product),
@@ -510,17 +509,17 @@ async function SaveProduct(product) {
  
 async function SaveVendingMachine(vendingMachine) {
     if (vendingMachine.VendID) {
-        // If exercise has an ID, it already exists in the API, update it
+        // If product has an ID, it already exists in the API, update it
         const updateUrl = `${vendingmachineUrl}/${vendingMachine.VendID}`;
         await fetch(updateUrl, {
-            method: "PUT", // Use PUT for updating
+            method: "PUT", 
             body: JSON.stringify(vendingMachine),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"
             }
         });
     } else {
-        // If exercise has no ID, it's a new exercise, create it
+        // If product has no ID, it's a new product, create it
         await fetch(vendingmachineUrl, {
             method: "POST",
             body: JSON.stringify(vendingMachine),
@@ -554,7 +553,7 @@ async function deleteProduct(product)
 async function SaveSoldProduct(soldproduct) {
     console.log("what exercise am I saving", soldproduct);
     if (soldproduct.id) {
-        // If exercise has an ID, it already exists in the API, update it
+        // If product has an ID, it already exists in the API, update it
         const updateUrl = `${purchaseeventUrl}/${soldproduct.id}`;
         await fetch(updateUrl, {
             method: "PUT", // Use PUT for updating
@@ -564,7 +563,7 @@ async function SaveSoldProduct(soldproduct) {
             }
         });
     } else {
-        // If exercise has no ID, it's a new exercise, create it
+        // If product has no ID, it's a new product, create it
         await fetch(purchaseeventUrl, {
             method: "POST",
             body: JSON.stringify(soldproduct),
