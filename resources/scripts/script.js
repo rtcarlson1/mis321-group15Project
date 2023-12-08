@@ -83,10 +83,10 @@ async function handleOnLoad()
     <label for="vendingMachine">Select Vending Machine:</label>
     <select id="vendingMachine" class="form-select" onchange="loadProductInfo()">
     `;
- 
+
     document.getElementById('app').innerHTML = html;
     const vendingMachines = await fetchVendingMachine();
-   
+
     // Dynamically populate the select element with vending machine options
     const vendingMachineSelect = document.getElementById("vendingMachine");
     vendingMachines.forEach(machine => {
@@ -96,24 +96,24 @@ async function handleOnLoad()
         vendingMachineSelect.appendChild(option);
     });
     loadProductInfo();
-   
 }
- 
+
 async function loadProductInfo() {
     const vendIDString = document.getElementById('vendingMachine').value;
     const vendID = parseInt(vendIDString, 10);
     try {
         const products = await fetchProducts();
- 
+
         const productContainer = document.getElementById("product-container");
         productContainer.innerHTML = ""; // Clear previous content
- 
-        let rowDiv; // Variable to hold the current row
- 
+
+        let rowDiv = false; // Variable to hold the current row
+
         console.log('my products', products)
- 
+
         products.forEach((product, index) => {
             let checkVend = false;
+            index = 0;
             if(product.vendID == vendID)
             {
                 checkVend = true;
@@ -125,7 +125,7 @@ async function loadProductInfo() {
                     rowDiv.classList.add("row");
                     productContainer.appendChild(rowDiv);
                 }
- 
+
                 // Create the item div for each product
                 const colDiv = document.createElement("div");
                 colDiv.classList.add("col-4");
@@ -156,7 +156,6 @@ async function loadProductInfo() {
     }
 }
 
-
 async function fetchProducts() {
     try {
         const response = await fetch(productUrl);
@@ -178,7 +177,6 @@ async function fetchAdmins(email, password) {
     }
 }
 
-
 async function fetchPurchaseEvents() {
     try {
         const response = await fetch(purchaseeventUrl);
@@ -199,7 +197,6 @@ async function fetchVendingMachine() {
     }
 }
 
-
 document.addEventListener("DOMContentLoaded", function()  {
     const isAdmin = localStorage.getItem("adminLoggedIn");
     if(isAdmin){
@@ -209,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function()  {
 
     };
 });
-
 
 async function adminLogin() {
     const email = document.getElementById("adminUsername").value;
@@ -250,37 +246,6 @@ async function adminLogin() {
     }
 }
 
- 
-// Function to fetch products from the API and dynamically generate HTML elements
-async function displayProducts() {
-    try {
-        const response = await fetch(productUrl);
-        const products = await response.json();
- 
-        const productContainer = document.getElementById("product-container");
- 
-        products.forEach(product => {
-            const colDiv = document.createElement("div");
-            colDiv.classList.add("col-4");
- 
-            const itemDiv = document.createElement("div");
-            itemDiv.classList.add("item");
- 
-            itemDiv.innerHTML = `
-                <img src="${product.ImageURL}" alt="${product.Name}">
-                <p>Name: ${product.Name}</p>
-                <button class="btn btn-primary" onclick="purchaseItem(${product.ProductID}${product.VendID})">Buy</button>
-            `;
- 
-            colDiv.appendChild(itemDiv);
-            productContainer.appendChild(colDiv);
-        });
- 
-    } catch (error) {
-        console.error('Error fetching products:', error);
-    }
-}
- 
 // Function to add money to the balance
 async function addMoney() {
     const moneyInput = parseFloat(document.getElementById("money-input").value);
@@ -306,7 +271,7 @@ async function purchaseItemCash(productID, vendID) {
     } else {
         displayErrorMessage("Please enter a valid amount.");
     }
- 
+
     try {
         // Fetch product details
         const response = await fetch(productUrl + "/" + productID);
@@ -325,19 +290,19 @@ async function purchaseItemCash(productID, vendID) {
             vendingMachine.moneyInMachine -= change;
             product.numSold++;
             product.quantity--;
- 
+
             // Update the UI
             updateBalanceDisplay();
             hideErrorMessage();
- 
+
             // Display a success message
             alert(`You have successfully purchased ${product.name}`);
-            alert(`You have received ${change} in change.`)
+            alert(`You have received $${change} in change.`)
 
             PurchaseEventAdd(product);
             markProductAsSold(product);
             VendEditMoney(vendingMachine, product);
- 
+
         } else {
             // Display an error message if the balance is insufficient
             displayErrorMessage("You don't have enough money to purchase this item.");
@@ -348,7 +313,7 @@ async function purchaseItemCash(productID, vendID) {
 }
 
 async function purchaseItemDigital(productID) {
- 
+
     try {
         // Fetch product details
         const response = await fetch(productUrl + "/" + productID);
@@ -403,12 +368,12 @@ async function VendEditMoney(vendingMachine, product) {
         Deleted: vendingMachine.deleted,
         AdminID: vendingMachine.adminID,
         MoneyInMachine: vendingMachine.moneyInMachine
- 
+
     };
     await SaveVendingMachine(newVendingMachine)
 
     handleOnLoad()
- 
+
 }
 
 async function SaveVendingMachine(vendingMachine) {
@@ -464,19 +429,18 @@ async function markProductAsSold(product) {
     }
     loadProductInfo();
 }
- 
+
 function displayErrorMessage(message) {
     const errorMessage = document.getElementById("error-message");
     errorMessage.textContent = message;
     errorMessage.style.display = "block";
 }
- 
+
 function hideErrorMessage() {
     const errorMessage = document.getElementById("error-message");
     errorMessage.style.display = "none";
 }
- 
- 
+
 function updateBalanceDisplay() {
     const moneyDisplay = document.getElementById("money-display");
     moneyDisplay.innerHTML = `<p>Your Balance: $${balance.toFixed(2)}</p>`;
