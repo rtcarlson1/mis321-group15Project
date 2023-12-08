@@ -24,3 +24,8 @@
 .custom-navbar{
     background-color: #660000 !important;
 }
+
+body {
+    background-color: #222;
+    color: #fff;
+}

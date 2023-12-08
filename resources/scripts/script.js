@@ -109,8 +109,6 @@ async function loadProductInfo() {
 
         let rowDiv = false; // Variable to hold the current row
 
-        console.log('my products', products)
-
         products.forEach((product, index) => {
             let checkVend = false;
             index = 0;
@@ -213,7 +211,6 @@ async function adminLogin() {
 
     try {
         const adminData = await fetchAdmins(email, password);
-        console.log('My admins', adminData);
 
         if (adminData.length > 0) {
             const isAdminMatch = adminData.some(admin => admin.email === email && admin.password === password);
@@ -260,9 +257,6 @@ async function addMoney() {
  
 // Function to purchase an item
 async function purchaseItemCash(productID, vendID) {
-    console.log("product.vendID", vendID)
-    console.log("product.productID", productID)
-    //const selectedItem = document.getElementById("item-select").value;
     const moneyInput = parseFloat(prompt("Please enter the amount of cash to add:"));
     if (!isNaN(moneyInput) && moneyInput > 0) {
         balance += moneyInput;
@@ -278,11 +272,10 @@ async function purchaseItemCash(productID, vendID) {
         const product = await response.json();
         const response2 = await fetch(vendingmachineUrl + "/" + vendID);
         const vendingMachine = await response2.json();
-        console.log("vendingMachine", vendingMachine);
+
         let change = 0.0;
         change = balance - product.cost;
-        console.log(vendingMachine.moneyInMachine)
-        console.log(change)
+
         if ((balance >= product.cost) && (change <= vendingMachine.moneyInMachine)) {
             // Deduct the cost from the balance
             balance = 0;
@@ -347,8 +340,6 @@ async function PurchaseEventAdd(product) {
         VendID: product.vendID,
         ProductID: product.productID
     };
-    console.log("What product am I adding?", purchaseEvent);
-    console.log(purchaseEvent.Date)
 
     await fetch(purchaseeventUrl, {
         method: "POST",
@@ -429,7 +420,7 @@ async function markProductAsSold(product) {
     }
     loadProductInfo();
 }
-
+`   `
 function displayErrorMessage(message) {
     const errorMessage = document.getElementById("error-message");
     errorMessage.textContent = message;
