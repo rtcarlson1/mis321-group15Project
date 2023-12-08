@@ -154,7 +154,8 @@ async function loadProductInfo() {
                     <img src="${product.imageURL}" alt="${product.name}">
                     <p>Name: ${product.name}</p>
                     <p>Cost: $${product.cost.toFixed(2)}</p>
-                    <button class="btn btn-primary" onclick="purchaseItem('${product.productID}')">Buy</button>
+                    <button class="btn btn-primary" onclick="purchaseItemDigital('${product.productID}')">Buy with Credit</button>
+                    <button class="btn btn-primary" onclick="purchaseItemCash('${product.productID}')">Buy with Cash</button>
                 `;
  
                 colDiv.appendChild(itemDiv);
@@ -285,7 +286,7 @@ async function displayProducts() {
             itemDiv.innerHTML = `
                 <img src="${product.ImageURL}" alt="${product.Name}">
                 <p>Name: ${product.Name}</p>
-                <button class="btn btn-primary" onclick="purchaseItem(${product.ProductID})">Buy</button>
+                <button class="btn btn-primary" onclick="purchaseItem(${product.ProductID}${product.VendID})">Buy</button>
             `;
  
             colDiv.appendChild(itemDiv);
@@ -326,17 +327,22 @@ async function addMoney() {
 }
  
 // Function to purchase an item
-async function purchaseItem(productId) {
+async function purchaseItemCash(productID, vendID) {
     //const selectedItem = document.getElementById("item-select").value;
  
     try {
         // Fetch product details
-        const response = await fetch(productUrl + "/" + productId);
+        const response = await fetch(productUrl + "/" + productID);
         const product = await response.json();
- 
-        if (balance >= product.cost) {
+        const response2 = await fetch(productUrl + "/" + vendID);
+        const vendingMachine = await response2.json();
+        let change = 0.0
+        change = balance - product.cost
+        if (balance >= product.cost && change <= vendingMachine.moneyInMachine) {
             // Deduct the cost from the balance
-            balance -= product.cost;
+            balance = 0;
+            vendingMachine.moneyInMachine += product.cost;
+            vendingMachine.moneyInMachine -= change;
             product.numSold++;
             product.quantity--;
  
@@ -349,7 +355,38 @@ async function purchaseItem(productId) {
 
             PurchaseEventAdd(product);
             markProductAsSold(product);
-            VendEditMoney(document.getElementById("vendingMachine").value, product);
+            VendEditMoney(vendingMachine, product);
+ 
+        } else {
+            // Display an error message if the balance is insufficient
+            displayErrorMessage("You don't have enough money to purchase this item.");
+        }
+    } catch (error) {
+        console.error('Error purchasing item:', error);
+    }
+}
+
+async function purchaseItemDigital(productID, vendID) {
+    //const selectedItem = document.getElementById("item-select").value;
+ 
+    try {
+        // Fetch product details
+        const response = await fetch(productUrl + "/" + productID);
+        const product = await response.json();
+        if (balance >= product.cost) {
+            // Deduct the cost from the balance
+            product.numSold++;
+            product.quantity--;
+ 
+            // Update the UI
+            updateBalanceDisplay();
+            hideErrorMessage();
+ 
+            // Display a success message
+            alert(`You have successfully purchased ${product.name}`);
+
+            PurchaseEventAdd(product);
+            markProductAsSold(product);
  
         } else {
             // Display an error message if the balance is insufficient
@@ -383,9 +420,7 @@ async function PurchaseEventAdd(product) {
  
 }
 
-async function VendEditMoney(vendID, product) {
-    const response = await fetch(vendingmachineUrl + "/" + vendID);
-    const vendingMachine = await response.json();
+async function VendEditMoney(vendingMachine, product) {
     vendingMachine.moneyInMachine -= product.cost;
     let newVendingMachine = {
         VendID: vendingMachine.vendID,
