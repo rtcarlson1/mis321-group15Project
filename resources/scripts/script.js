@@ -92,8 +92,7 @@ async function handleOnLoad()
                         <input type="number" id="cash-amount" class="form-control" placeholder="Enter cash payment amount" style="display: none;">
                     </div>
                 </div> -->
-                <button class="btn btn-primary" type="button" onclick="addMoney()">Add Money</button>
-                <input type="number" id="money-input" class="form-control" placeholder="Enter amount">
+                
             </div>
         </div>
     </div>
@@ -149,13 +148,13 @@ async function loadProductInfo() {
  
                 const itemDiv = document.createElement("div");
                 itemDiv.classList.add("item");
- 
+                
                 itemDiv.innerHTML = `
                     <img src="${product.imageURL}" alt="${product.name}">
                     <p>Name: ${product.name}</p>
                     <p>Cost: $${product.cost.toFixed(2)}</p>
                     <button class="btn btn-primary" onclick="purchaseItemDigital('${product.productID}')">Buy with Credit</button>
-                    <button class="btn btn-primary" onclick="purchaseItemCash('${product.productID, product.vendID}')">Buy with Cash</button>
+                    <button class="btn btn-primary" onclick="purchaseItemCash(${product.productID}, ${product.vendID})">Buy with Cash</button>
                 `;
  
                 colDiv.appendChild(itemDiv);
@@ -297,19 +296,6 @@ async function displayProducts() {
         console.error('Error fetching products:', error);
     }
 }
- 
- 
-// Function to fetch product details by ID from the API
-// async function fetchProductDetails(productID) {
-//     try {
-//         const response = await fetch(productUrl + "${productID}");
-//         const product = await response.json();
- 
-//         console.log('Product Details:', product);
-//     } catch (error) {
-//         console.error('Error fetching product details:', error);
-//     }
-// }
 
 
 //-----------------------------------------------What we are working on now--------------------------------------
@@ -328,17 +314,30 @@ async function addMoney() {
  
 // Function to purchase an item
 async function purchaseItemCash(productID, vendID) {
+    console.log("product.vendID", vendID)
+    console.log("product.productID", productID)
     //const selectedItem = document.getElementById("item-select").value;
+    const moneyInput = parseFloat(prompt("Please enter the amount of cash to add:"));
+    if (!isNaN(moneyInput) && moneyInput > 0) {
+        balance += moneyInput;
+        updateBalanceDisplay();
+        hideErrorMessage();
+    } else {
+        displayErrorMessage("Please enter a valid amount.");
+    }
  
     try {
         // Fetch product details
         const response = await fetch(productUrl + "/" + productID);
         const product = await response.json();
-        const response2 = await fetch(productUrl + "/" + vendID);
+        const response2 = await fetch(vendingmachineUrl + "/" + vendID);
         const vendingMachine = await response2.json();
-        let change = 0.0
-        change = balance - product.cost
-        if (balance >= product.cost && change <= vendingMachine.moneyInMachine) {
+        console.log("vendingMachine", vendingMachine);
+        let change = 0.0;
+        change = balance - product.cost;
+        console.log(vendingMachine.moneyInMachine)
+        console.log(change)
+        if ((balance >= product.cost) && (change <= vendingMachine.moneyInMachine)) {
             // Deduct the cost from the balance
             balance = 0;
             vendingMachine.moneyInMachine += product.cost;
@@ -352,6 +351,7 @@ async function purchaseItemCash(productID, vendID) {
  
             // Display a success message
             alert(`You have successfully purchased ${product.name}`);
+            alert(`You have received ${change} in change.`)
 
             PurchaseEventAdd(product);
             markProductAsSold(product);
@@ -391,7 +391,7 @@ async function purchaseItemDigital(productID) {
         console.error('Error purchasing item:', error);
     }
 }
- 
+
 async function PurchaseEventAdd(product) {
     const tempDate = new Date();
     let tempString = ""

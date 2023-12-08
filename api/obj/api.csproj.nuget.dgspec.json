@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/api.csproj": {}
+    "C:\\Users\\MainUser\\Code\\321\\ThisSucks\\mis321-group15Project\\api\\api.csproj": {}
   },
   "projects": {
-    "/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/api.csproj": {
+    "C:\\Users\\MainUser\\Code\\321\\ThisSucks\\mis321-group15Project\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/api.csproj",
+        "projectUniqueName": "C:\\Users\\MainUser\\Code\\321\\ThisSucks\\mis321-group15Project\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/api.csproj",
-        "packagesPath": "/Users/ryancarlson/.nuget/packages/",
-        "outputPath": "/Users/ryancarlson/Desktop/MIS321/mis321-group15Project/api/obj/",
+        "projectPath": "C:\\Users\\MainUser\\Code\\321\\ThisSucks\\mis321-group15Project\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\MainUser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MainUser\\Code\\321\\ThisSucks\\mis321-group15Project\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ryancarlson/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\MainUser\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
