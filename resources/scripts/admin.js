@@ -33,7 +33,7 @@ async function handleOnLoad()
  
         <div class="container">
             <h1>Vending Machine Admin</h1>
- 
+            <br>
             <label for="vendingMachine">Select Vending Machine:</label>
             <select id="vendingMachine" class="form-select" onchange="loadProductList()">
        
@@ -112,75 +112,67 @@ async function loadProductList() {
  
     const products = await fetchProducts();
     const purchaseEvents = await fetchPurchaseEvents();
-    const vendingMachines = await fetchVendingMachine();
-   
-    const machineTableBody = document.querySelector("#machineInventoryTable tbody");
-    machineTableBody.innerHTML = ""; // Clear previous content
  
+    // Clear previous content
+    clearTable("#machineInventoryTable tbody");
+    clearTable("#soldInventoryTable tbody");
  
-   
-   
-        products.forEach(product => {
-            if(product.deleted == false)
-            {
-                let checkVend = false;
-                if(product.vendID == vendID)
-                {
-                    checkVend = true;
-                }
-                if(checkVend == true)
-                {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `
-                        <td>${product.name}</td>
-                        <td>${product.productID}</td>
-                        <td id="inventory-${product.productID}">${product.quantity}</td>
-                        <td>
-                            <button class="btn btn-danger" onclick="removeFromInventory('${product.productID}')">Remove</button>
-                        </td>
-                    `;
-                    machineTableBody.appendChild(row);
-                    console.log(product.name)
- 
-                    const soldTableBody = document.querySelector("#soldInventoryTable tbody");
-                    soldTableBody.innerHTML = ""; // Clear previous content
-                   
-                    purchaseEvents.forEach(purchaseEvent => {
-                        const row = document.createElement("tr");
-                        let tempName = '';
-                        let checkVend = false;
-                        if(purchaseEvent.vendID == vendID)
-                        {
-                            checkVend = true;
-                        }
-                        if(checkVend == true)
-                        {
-                            console.log('VendID:', purchaseEvent)
-                            console.log('Product ID:', product.productID);
-                            console.log('Purchase EventProductID:', purchaseEvent.productID);
-                           
-                           
-                            tempName = product.name;
-                            console.log('Selected Sold Dates:', purchaseEvent.date);
-                            console.log('Temp Name:', tempName);
-                            row.innerHTML = `
-                                <td>${tempName}</td>
-                                <td>${product.productID}</td>
-                                <td>${purchaseEvent.date}</td>
-                            `;
-                            soldTableBody.appendChild(row);
-                           
-                           
-                            // console.log('Product Name:', product.name);
-                           
-                        }
-                    });
-                }
- 
-            }
-        });
-   
+    loadProductsTable(products, vendID);
+    loadSoldProductsTable(products, purchaseEvents, vendID);
 }
+ 
+function clearTable(tableSelector) {
+    const tableBody = document.querySelector(tableSelector);
+    tableBody.innerHTML = "";
+}
+ 
+function loadProductsTable(products, vendID) {
+    const machineTableBody = document.querySelector("#machineInventoryTable tbody");
+ 
+    products.forEach(product => {
+        if (product.deleted == false && product.vendID == vendID) {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${product.name}</td>
+                <td>${product.productID}</td>
+                <td id="inventory-${product.productID}">${product.quantity}</td>
+                <td>
+                    <button class="btn btn-danger" onclick="removeFromInventory('${product.productID}')">Remove</button>
+                </td>
+            `;
+            machineTableBody.appendChild(row);
+            console.log(product.name);
+        }
+    });
+}
+ 
+function loadSoldProductsTable(products, purchaseEvents, vendID) {
+    const soldTableBody = document.querySelector("#soldInventoryTable tbody");
+ 
+    purchaseEvents.forEach(purchaseEvent => {
+        console.log('Products:', products);
+        console.log('Purchase Events:', purchaseEvents);
+        // let tempname = '';
+        if (purchaseEvent.vendID == vendID) {
+            const associatedProduct = products.find(p => p.productID === purchaseEvent.productID);
+            const productName = associatedProduct ? associatedProduct.name : 'Unknown Product';
+ 
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${productName}</td>
+                <td>${purchaseEvent.productID}</td>
+                <td>${purchaseEvent.date}</td>
+            `;
+            soldTableBody.appendChild(row);
+           
+        }
+    });
+}
+ 
+ 
+ 
+ 
+ 
  
  
 async function fetchPurchaseEvents() {
@@ -235,7 +227,7 @@ function loadProductForm() {
     // Display the form in the container
     document.getElementById('productFormContainer').innerHTML = formHtml;
 }
-
+ 
 function loadProductEditQuantity() {
     let formHtml = `
         <form onsubmit="return false">
@@ -250,7 +242,7 @@ function loadProductEditQuantity() {
     // Display the form in the container
     document.getElementById('productFormContainer').innerHTML = formHtml;
 }
-
+ 
 function loadProductEditCost() {
     let formHtml = `
         <form onsubmit="return false">
@@ -265,7 +257,7 @@ function loadProductEditCost() {
     // Display the form in the container
     document.getElementById('productFormContainer').innerHTML = formHtml;
 }
-
+ 
 function loadProductEditMoney() {
     let formHtml = `
         <form onsubmit="return false">
@@ -278,7 +270,7 @@ function loadProductEditMoney() {
     // Display the form in the container
     document.getElementById('productFormContainer').innerHTML = formHtml;
 }
-
+ 
 function loadProductEditType() {
     let formHtml = `
         <form onsubmit="return false">
@@ -337,7 +329,7 @@ async function ProductAdd() {
     document.getElementById('vendid').value = '';
  
 }
-
+ 
 async function ProductEditQuantity(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
@@ -357,11 +349,11 @@ async function ProductEditQuantity(productID) {
     await SaveProduct(newProduct)
     document.getElementById('productID').value = '';
     document.getElementById('quantity').value = '';
-
+ 
     loadProductList()
  
 }
-
+ 
 async function ProductEditCost(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
@@ -381,11 +373,11 @@ async function ProductEditCost(productID) {
     await SaveProduct(newProduct)
     document.getElementById('productID').value = '';
     document.getElementById('cost').value = '';
-
+ 
     loadProductList()
  
 }
-
+ 
 async function ProductEditMoney(vendID) {
     const response = await fetch(vendingmachineUrl + "/" + vendID);
     const vendingMachine = await response.json();
@@ -400,11 +392,11 @@ async function ProductEditMoney(vendID) {
     };
     await SaveVendingMachine(newVendingMachine)
     document.getElementById('money').value = '';
-
+ 
     handleOnLoad()
  
 }
-
+ 
 async function ProductEditType(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
@@ -425,7 +417,7 @@ async function ProductEditType(productID) {
     document.getElementById('productID').value = '';
     document.getElementById('name').value = '';
     document.getElementById('imageURL').value = '';
-
+ 
     loadProductList()
  
 }
@@ -515,7 +507,7 @@ async function SaveProduct(product) {
         });
     }
 }
-
+ 
 async function SaveVendingMachine(vendingMachine) {
     if (vendingMachine.VendID) {
         // If exercise has an ID, it already exists in the API, update it
