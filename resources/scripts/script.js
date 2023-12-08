@@ -76,23 +76,7 @@ async function handleOnLoad()
                 <div id="money-display">
                     <p>Your Balance: $0.00</p>
                 </div>
-                <div id="error-message" class="alert alert-danger" style="display: none;"></div>
-                <!-- Add a form to select payment method -->
-                <!-- <form>
-                    <select id="payment-method" class="form-select">
-                        <option>Please select a payment method:</option>
-                        <option value="digital">Digital Payment</option>
-                        <option value="cash">Cash Payment</option>
-                    </select>
-                </form> -->
-                <!-- Add a div to display the input based on the selected method -->
-                <!-- <div id="payment-input" style="display: none;">
-                    <div class="mb-3">
-                        <input type="number" id="digital-amount" class="form-control" placeholder="Enter digital payment amount">
-                        <input type="number" id="cash-amount" class="form-control" placeholder="Enter cash payment amount" style="display: none;">
-                    </div>
-                </div> -->
-                
+                <div id="error-message" class="alert alert-danger" style="display: none;"></div>               
             </div>
         </div>
     </div>
@@ -154,7 +138,7 @@ async function loadProductInfo() {
                     <p>Name: ${product.name}</p>
                     <p>Cost: $${product.cost.toFixed(2)}</p>
                     <button class="btn btn-primary" onclick="purchaseItemDigital('${product.productID}')">Buy with Credit</button>
-                    <button class="btn btn-primary" onclick="purchaseItemCash(${product.productID}, ${product.vendID})">Buy with Cash</button>
+                    <button class="btn btn-success" onclick="purchaseItemCash(${product.productID}, ${product.vendID})">Buy with Cash</button>
                 `;
  
                 colDiv.appendChild(itemDiv);
@@ -216,15 +200,15 @@ async function fetchVendingMachine() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function()  {
+    const isAdmin = localStorage.getItem("adminLoggedIn");
     if(isAdmin){
-        const yesAdmin = true
-        const adminLink = document.getElementById("admin-link");
-        adminLink.style.display = yesAdmin ? "block" : "none";
-    };
-    
-});
+        document.getElementById("admin-link").style.display = "block";
+    } else {
+        document.getElementById("admin-link").style.display = "none";
 
+    };
+});
 
 
 async function adminLogin() {
@@ -240,7 +224,7 @@ async function adminLogin() {
 
             if (isAdminMatch) {
                 isAdmin = true;
-                localStorage.setItem("adminLoggedIn", "true");
+                localStorage.setItem("adminLoggedIn", true);
                 alert("Admin login successful!");
 
                 const modal = document.getElementById("adminLoginModal");
