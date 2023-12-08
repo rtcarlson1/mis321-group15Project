@@ -349,6 +349,7 @@ async function purchaseItem(productId) {
 
             PurchaseEventAdd(product);
             markProductAsSold(product);
+            VendEditMoney(document.getElementById("vendingMachine").value, product);
  
         } else {
             // Display an error message if the balance is insufficient
@@ -380,6 +381,48 @@ async function PurchaseEventAdd(product) {
         }
     });
  
+}
+
+async function VendEditMoney(vendID, product) {
+    const response = await fetch(vendingmachineUrl + "/" + vendID);
+    const vendingMachine = await response.json();
+    vendingMachine.moneyInMachine -= product.cost;
+    let newVendingMachine = {
+        VendID: vendingMachine.vendID,
+        Address: vendingMachine.address,
+        ZipCode: vendingMachine.zipCode,
+        Deleted: vendingMachine.deleted,
+        AdminID: vendingMachine.adminID,
+        MoneyInMachine: vendingMachine.moneyInMachine
+ 
+    };
+    await SaveVendingMachine(newVendingMachine)
+
+    handleOnLoad()
+ 
+}
+
+async function SaveVendingMachine(vendingMachine) {
+    if (vendingMachine.VendID) {
+        // If exercise has an ID, it already exists in the API, update it
+        const updateUrl = `${vendingmachineUrl}/${vendingMachine.VendID}`;
+        await fetch(updateUrl, {
+            method: "PUT", // Use PUT for updating
+            body: JSON.stringify(vendingMachine),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        });
+    } else {
+        // If exercise has no ID, it's a new exercise, create it
+        await fetch(vendingmachineUrl, {
+            method: "POST",
+            body: JSON.stringify(vendingMachine),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        });
+    }
 }
 
 // Function to mark a product as sold (need to implement this on the admin page)

@@ -62,6 +62,7 @@ async function handleOnLoad()
             <button onclick="loadProductEditType()" class="btn btn-primary">Edit Type</button>
             <button onclick="loadProductEditQuantity()" class="btn btn-primary">Edit Quantity</button>
             <button onclick="loadProductEditCost()" class="btn btn-primary">Edit Cost</button>
+            <button onclick="loadProductEditMoney()" class="btn btn-primary">Edit Money</button>
             <br>
             <br>
             <div class="row">
@@ -98,7 +99,7 @@ async function handleOnLoad()
     vendingMachines.forEach(machine => {
         const option = document.createElement("option");
         option.value = machine.vendID;
-        option.textContent = "ID: " + machine.vendID + " Address: " + machine.address;
+        option.textContent = "ID: " + machine.vendID + " Address: " + machine.address + " Money In Machine: $" + machine.moneyInMachine;
         vendingMachineSelect.appendChild(option);
     });
     loadProductList();
@@ -265,6 +266,19 @@ function loadProductEditCost() {
     document.getElementById('productFormContainer').innerHTML = formHtml;
 }
 
+function loadProductEditMoney() {
+    let formHtml = `
+        <form onsubmit="return false">
+            <label for="money">Money:</label><br>
+            <input type="number" id="money" name="money"><br>
+            <button onclick="ProductEditMoney(vendingMachine.value)" class="btn btn-primary">Submit</button>
+        </form>
+    `;
+ 
+    // Display the form in the container
+    document.getElementById('productFormContainer').innerHTML = formHtml;
+}
+
 function loadProductEditType() {
     let formHtml = `
         <form onsubmit="return false">
@@ -369,6 +383,25 @@ async function ProductEditCost(productID) {
     document.getElementById('cost').value = '';
 
     loadProductList()
+ 
+}
+
+async function ProductEditMoney(vendID) {
+    const response = await fetch(vendingmachineUrl + "/" + vendID);
+    const vendingMachine = await response.json();
+    let newVendingMachine = {
+        VendID: vendingMachine.vendID,
+        Address: vendingMachine.address,
+        ZipCode: vendingMachine.zipCode,
+        Deleted: vendingMachine.deleted,
+        AdminID: vendingMachine.adminID,
+        MoneyInMachine: document.getElementById('money').value
+ 
+    };
+    await SaveVendingMachine(newVendingMachine)
+    document.getElementById('money').value = '';
+
+    handleOnLoad()
  
 }
 
@@ -481,8 +514,29 @@ async function SaveProduct(product) {
             }
         });
     }
- 
-   
+}
+
+async function SaveVendingMachine(vendingMachine) {
+    if (vendingMachine.VendID) {
+        // If exercise has an ID, it already exists in the API, update it
+        const updateUrl = `${vendingmachineUrl}/${vendingMachine.VendID}`;
+        await fetch(updateUrl, {
+            method: "PUT", // Use PUT for updating
+            body: JSON.stringify(vendingMachine),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        });
+    } else {
+        // If exercise has no ID, it's a new exercise, create it
+        await fetch(vendingmachineUrl, {
+            method: "POST",
+            body: JSON.stringify(vendingMachine),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        });
+    }
 }
  
 async function deleteProduct(product)

@@ -7,5 +7,6 @@ namespace api.Models
         public int ZipCode {get; set;}
         public bool Deleted{get; set;}
         public int AdminID {get; set;}
+        public double MoneyInMachine {get; set;}
     }
 }

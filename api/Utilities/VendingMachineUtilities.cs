@@ -21,7 +21,7 @@ namespace api.Utilities
             List<VendingMachine> AllVendingMachines = new List<VendingMachine>();
             while(rdr.Read())
             {
-                AllVendingMachines.Add(new VendingMachine(){VendID = rdr.GetInt32(0), Address = rdr.GetString(1), ZipCode = rdr.GetInt32(2), Deleted = rdr.GetBoolean(3), AdminID = rdr.GetInt32(4)});
+                AllVendingMachines.Add(new VendingMachine(){VendID = rdr.GetInt32(0), Address = rdr.GetString(1), ZipCode = rdr.GetInt32(2), Deleted = rdr.GetBoolean(3), AdminID = rdr.GetInt32(4), MoneyInMachine = rdr.GetDouble(5)});
             }
             con.Close();
             return AllVendingMachines;
@@ -55,13 +55,15 @@ namespace api.Utilities
             string cs  = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            string stm = @"UPDATE VendingMachines SET Address = @Address, ZipCode = @ZipCode, Deleted = @Deleted WHERE VendID = @ID";
+            string stm = @"UPDATE VendingMachines SET Address = @Address, ZipCode = @ZipCode, Deleted = @Deleted, AdminID = @AdminID, MoneyInMachine = @MoneyInMachine WHERE VendID = @VendID";
             MySqlCommand cmd = new MySqlCommand(stm, con);
             
+            cmd.Parameters.AddWithValue("@VendID", value.VendID);
             cmd.Parameters.AddWithValue("@Address", value.Address);
             cmd.Parameters.AddWithValue("@ZipCode", value.ZipCode);
             cmd.Parameters.AddWithValue("@Deleted", value.Deleted);
-            cmd.Parameters.AddWithValue("@ID", value.VendID);
+            cmd.Parameters.AddWithValue("@AdminID", value.AdminID);
+            cmd.Parameters.AddWithValue("@MoneyInMachine", value.MoneyInMachine);
             
             cmd.Prepare();
             cmd.ExecuteNonQuery();
