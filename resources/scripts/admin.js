@@ -141,7 +141,6 @@ function loadProductsTable(products, vendID) {
                 </td>
             `;
             machineTableBody.appendChild(row);
-            console.log(product.name);
         }
     });
 }
@@ -150,8 +149,6 @@ function loadSoldProductsTable(products, purchaseEvents, vendID) {
     const soldTableBody = document.querySelector("#soldInventoryTable tbody");
  
     purchaseEvents.forEach(purchaseEvent => {
-        console.log('Products:', products);
-        console.log('Purchase Events:', purchaseEvents);
 
         if (purchaseEvent.vendID == vendID) {
             const associatedProduct = products.find(p => p.productID === purchaseEvent.productID);
@@ -319,21 +316,22 @@ async function ProductAdd() {
         NumSold: 0,
         Deleted: false,
         VendID: document.getElementById('vendid').value,
+        ImageURL: document.getElementById('imageURL').value
     };
-    console.log("What product am I adding?", product);
-    myProduct.push(product);
+ 
     await SaveProduct(product)
     document.getElementById('quantity').value = '';
     document.getElementById('cost').value = '';
     document.getElementById('name').value = '';
     document.getElementById('vendid').value = '';
+    document.getElementById('imageURL').value = '';
  
 }
- 
+
 async function ProductEditQuantity(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
-    console.log(product)
+
     let newProduct = {
         ProductID: document.getElementById('productID').value,
         Name: product.name,
@@ -343,21 +341,21 @@ async function ProductEditQuantity(productID) {
         Deleted: product.deleted,
         VendID: product.vendID,
         ImageURL: product.imageURL
- 
+
     };
-    console.log("What product am I editing?", product);
+
     await SaveProduct(newProduct)
     document.getElementById('productID').value = '';
     document.getElementById('quantity').value = '';
- 
+
     loadProductList()
- 
+
 }
- 
+
 async function ProductEditCost(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
-    console.log(product)
+
     let newProduct = {
         ProductID: document.getElementById('productID').value,
         Name: product.name,
@@ -367,17 +365,17 @@ async function ProductEditCost(productID) {
         Deleted: product.deleted,
         VendID: product.vendID,
         ImageURL: product.imageURL
- 
+
     };
-    console.log("What product am I editing?", product);
+
     await SaveProduct(newProduct)
     document.getElementById('productID').value = '';
     document.getElementById('cost').value = '';
- 
+
     loadProductList()
- 
+
 }
- 
+
 async function ProductEditMoney(vendID) {
     const response = await fetch(vendingmachineUrl + "/" + vendID);
     const vendingMachine = await response.json();
@@ -388,19 +386,19 @@ async function ProductEditMoney(vendID) {
         Deleted: vendingMachine.deleted,
         AdminID: vendingMachine.adminID,
         MoneyInMachine: document.getElementById('money').value
- 
+
     };
     await SaveVendingMachine(newVendingMachine)
     document.getElementById('money').value = '';
- 
+
     handleOnLoad()
- 
+
 }
- 
+
 async function ProductEditType(productID) {
     const response = await fetch(productUrl + "/" + productID);
     const product = await response.json();
-    console.log(product)
+
     let newProduct = {
         ProductID: document.getElementById('productID').value,
         Name: document.getElementById('name').value,
@@ -410,38 +408,35 @@ async function ProductEditType(productID) {
         Deleted: product.deleted,
         VendID: product.vendID,
         ImageURL: document.getElementById('imageURL').value
- 
+
     };
-    console.log("What product am I editing?", product);
+
     await SaveProduct(newProduct)
     document.getElementById('productID').value = '';
     document.getElementById('name').value = '';
     document.getElementById('imageURL').value = '';
- 
+
     loadProductList()
- 
+
 }
- 
+
 async function SoldProductAdd() {
     let soldproduct = {
         Date: document.getElementById('date').value,
         Time: document.getElementById('time').value,
         ProductID: document.getElementById('productid').value,
         Deleted: false,
-       
- 
- 
+     
     };
-    console.log("What product was sold?", soldproduct);
+
     myPurchaseEvent.push(soldproduct);
     await SaveSoldProduct(soldproduct)
     document.getElementById('date').value = '';
     document.getElementById('time').value = '';
     document.getElementById('productid').value = '';
-   
- 
+
 }
- 
+
 async function removeFromInventory(id) {
     id--
     try {
@@ -453,13 +448,12 @@ async function removeFromInventory(id) {
             }
         });
 
-        console.log(myProduct[id])
         deleteProduct(myProduct[id]);
     } catch (error) {
         console.error('Error removing from product:', error);
     }
 }
- 
+
 async function removeFromSoldInventory(id) {
     try {
         const myProduct = await getItemInventory();
@@ -471,7 +465,7 @@ async function removeFromSoldInventory(id) {
         console.error('Error removing from product:', error);
     }
 }
- 
+
 async function getItemInventory() {
     try {
         let response = await fetch(productUrl); 
@@ -481,13 +475,13 @@ async function getItemInventory() {
         console.error('Error fetching item inventory from API:', error);
     }
 }
- 
+
 async function SaveProduct(product) {
-    console.log("what exercise am I saving", product);
+
     if (product.ProductID) {
         // If product has an ID, it already exists in the API, update it
         const updateUrl = `${productUrl}/${product.ProductID}`;
-        console.log(product)
+
         await fetch(updateUrl, {
             method: "PUT", 
             body: JSON.stringify(product),
@@ -506,7 +500,7 @@ async function SaveProduct(product) {
         });
     }
 }
- 
+
 async function SaveVendingMachine(vendingMachine) {
     if (vendingMachine.VendID) {
         // If product has an ID, it already exists in the API, update it
@@ -529,13 +523,12 @@ async function SaveVendingMachine(vendingMachine) {
         });
     }
 }
- 
+
 async function deleteProduct(product)
 {
     const putUrl = "https://localhost:7051/api/Product/" + product.productID;
-    console.log(product.productID)
     product.deleted = true;
-    console.log(product)
+
     await fetch(putUrl, {
         method: "PUT",
         headers: {
@@ -549,9 +542,9 @@ async function deleteProduct(product)
     })
     loadProductList();
 }
- 
+
 async function SaveSoldProduct(soldproduct) {
-    console.log("what exercise am I saving", soldproduct);
+
     if (soldproduct.id) {
         // If product has an ID, it already exists in the API, update it
         const updateUrl = `${purchaseeventUrl}/${soldproduct.id}`;
@@ -572,7 +565,5 @@ async function SaveSoldProduct(soldproduct) {
             }
         });
     }
- 
-   
- 
+
 }

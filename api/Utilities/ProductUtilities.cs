@@ -35,21 +35,21 @@ namespace api.Utilities
             string cs  = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
-            Console.WriteLine("New Product");
-
-            string stm = @"INSERT INTO Products(Quantity, Name, Cost, NumSold, Deleted, VendID) VALUES(@Quantity, @Name, @Cost, @NumSold, @Deleted, @VendID)";
-
+ 
+            string stm = @"INSERT INTO Products (Quantity, Name, Cost, NumSold, Deleted, VendID, ImageURL) VALUES(@Quantity, @Name, @Cost, @NumSold, @Deleted, @VendID, @ImageURL)";
+ 
             using var cmd = new MySqlCommand(stm, con);
-
+ 
             cmd.Parameters.AddWithValue("@Quantity", myProduct.Quantity);
             cmd.Parameters.AddWithValue("@Name", myProduct.Name);
             cmd.Parameters.AddWithValue("@Cost", myProduct.Cost);
-            cmd.Parameters.AddWithValue("@Sold", myProduct.NumSold);
+            cmd.Parameters.AddWithValue("@NumSold", myProduct.NumSold);
             cmd.Parameters.AddWithValue("@Deleted", myProduct.Deleted);
             cmd.Parameters.AddWithValue("@VendID", myProduct.VendID);
-
+            cmd.Parameters.AddWithValue("@ImageURL", myProduct.ImageURL);
+ 
             cmd.Prepare();
-
+ 
             cmd.ExecuteNonQuery();
         }
 
